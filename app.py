@@ -6,7 +6,9 @@ app = Flask(__name__)
 def calculate_bmi():
     if request.method == 'POST':
         weight = float(request.form['weight'])
-        height = float(request.form['height'])
+        feet = float(request.form['feet'])
+        inches = float(request.form['inches'])
+        height = (feet * 12 + inches) * 0.0254  # Convert height to meters
         bmi = calculate_bmi_value(weight, height)
         return render_template('result.html', bmi=bmi)
     return render_template('index.html')
