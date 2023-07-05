@@ -23,6 +23,9 @@
             font-size: 18px;
             color: #888;
         }
+        .weight-difference {
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
@@ -40,6 +43,11 @@
                 Obesity
             {% endif %}
         </p>
+        {% if weight_difference %}
+            <div class="weight-difference">
+                <p>{{ weight_difference }}</p>
+            </div>
+        {% endif %}
     </div>
 </body>
 </html>
