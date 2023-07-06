@@ -34,13 +34,13 @@
         <p>Your BMI is: {{ bmi }}</p>
         <p class="category">
             {% if bmi < 18.5 %}
-                Underweight
+                Underweight 😕
             {% elif bmi < 25 %}
-                Normal weight
+                Normal weight 🙂
             {% elif bmi < 30 %}
-                Overweight
+                Overweight 😅
             {% else %}
-                Obesity
+                Obesity 🙁
             {% endif %}
         </p>
         {% if weight_difference %}
