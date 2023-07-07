@@ -1,4 +1,4 @@
-## BMI Calculator Documentation
+## BMI Meter
 
 This is a simple web application built with Flask that calculates the Body Mass Index (BMI) and provides information about weight difference based on the calculated BMI. The application allows users to input their weight, height in feet and inches, and displays the BMI value along with the weight difference needed to reach a healthy weight range.
 
